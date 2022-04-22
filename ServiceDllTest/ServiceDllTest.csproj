@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{682A436A-B1C8-4499-A276-8B75A0FCCE43}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServiceDllTest</RootNamespace>
+    <AssemblyName>ServiceDllTest</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonObjects">
+      <HintPath>..\..\..\Framework_ProjectV2_NET 2.6\CommonObjects_OK\Release\CommonObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameworkConnectionInterface">
+      <HintPath>..\..\..\Framework_ProjectV2_NET 2.6\FrameworkConnectionInterface_OK\Release\FrameworkConnectionInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Utilities">
+      <HintPath>..\..\..\Framework_ProjectV2_NET 2.6\Utilities_OK\Release\Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_EmptyStrategy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EmptyStrategy.Designer.cs">
+      <DependentUpon>frm_EmptyStrategy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MohebiStrategy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MohebiStrategy.Designer.cs">
+      <DependentUpon>frm_MohebiStrategy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NorouziStrategy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NorouziStrategy.Designer.cs">
+      <DependentUpon>frm_NorouziStrategy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SafiStrategy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SafiStrategy.Designer.cs">
+      <DependentUpon>frm_SafiStrategy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ShowResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ShowResult.designer.cs">
+      <DependentUpon>frm_ShowResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Test.designer.cs">
+      <DependentUpon>frm_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_EmptyStrategy.resx">
+      <DependentUpon>frm_EmptyStrategy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MohebiStrategy.resx">
+      <DependentUpon>frm_MohebiStrategy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NorouziStrategy.resx">
+      <DependentUpon>frm_NorouziStrategy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SafiStrategy.resx">
+      <DependentUpon>frm_SafiStrategy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ShowResult.resx">
+      <DependentUpon>frm_ShowResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Test.resx">
+      <DependentUpon>frm_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\CommonObjects.dll" />
+    <Content Include="bin\Debug\FrameworkConnectionInterface.dll" />
+    <Content Include="bin\Debug\Utilities.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CryptoCoinPropertyLib\CryptoCoinPropertyLib.csproj">
+      <Project>{d9270d4b-ad84-41e4-961b-16becf987e6d}</Project>
+      <Name>CryptoCoinPropertyLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

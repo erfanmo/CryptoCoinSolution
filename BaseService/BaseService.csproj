@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A6BE0A6-A9AF-4E0D-AFC3-BC253E2FA88B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrameworkBaseService</RootNamespace>
+    <AssemblyName>CryptoCoinService</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonObjects">
+      <HintPath>..\..\..\Framework_ProjectV2_NET 2.6\CommonObjects_OK\Release\CommonObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Logger">
+      <HintPath>..\..\..\Framework_ProjectV2_NET 2.6\Logging_OK\Release\Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Utilities">
+      <HintPath>..\..\..\Framework_ProjectV2_NET 2.6\Utilities_OK\Release\Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseService.cs" />
+    <Compile Include="BaseServiceInterface.cs" />
+    <Compile Include="BaseStrategy.cs" />
+    <Compile Include="CryptoCoinService.cs" />
+    <Compile Include="SafiStrategy.cs" />
+    <Compile Include="MohebiStrategy.cs" />
+    <Compile Include="NorouziStrategy.cs" />
+    <Compile Include="EmptyStrategy.cs" />
+    <Compile Include="MessageObj.cs" />
+    <Compile Include="Notification.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceInfo.cs" />
+    <Compile Include="ServiceOperation.cs" />
+    <Compile Include="SimpleCandelAnalyser.cs" />
+    <Compile Include="StrategyInfo.cs" />
+    <Compile Include="ThreeStepWatchOrder.cs" />
+    <Compile Include="WatchOrder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BinanceAPICall\BinanceAPICall.csproj">
+      <Project>{1ba3f765-b3e0-4cec-9c1d-4a6ee8c73fba}</Project>
+      <Name>BinanceAPICall</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CryptoCoinDataAccess\CryptoCoinDataAccess.csproj">
+      <Project>{40b7b04f-327d-4388-a8f8-6b4e13b802cd}</Project>
+      <Name>CryptoCoinDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CryptoCoinPropertyLib\CryptoCoinPropertyLib.csproj">
+      <Project>{d9270d4b-ad84-41e4-961b-16becf987e6d}</Project>
+      <Name>CryptoCoinPropertyLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\CommonObjects.dll" />
+    <Content Include="bin\Debug\Logger.dll" />
+    <Content Include="bin\Debug\Utilities.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

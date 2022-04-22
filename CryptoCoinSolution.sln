@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoCoinPropertyLib", "CryptoCoinPropertyLib\CryptoCoinPropertyLib.csproj", "{D9270D4B-AD84-41E4-961B-16BECF987E6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoCoinDataAccess", "CryptoCoinDataAccess\CryptoCoinDataAccess.csproj", "{40B7B04F-327D-4388-A8F8-6B4E13B802CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseService", "BaseService\BaseService.csproj", "{5A6BE0A6-A9AF-4E0D-AFC3-BC253E2FA88B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceTest", "ServiceTest\ServiceTest.csproj", "{C18DA8D5-7091-46E5-AC33-DBE1A9393A13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDllTest", "ServiceDllTest\ServiceDllTest.csproj", "{682A436A-B1C8-4499-A276-8B75A0FCCE43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectBinanceAPICall_Test", "DirectBinanceAPICall_Test\DirectBinanceAPICall_Test.csproj", "{8FD458F8-B67B-4F76-B94A-6F4448279532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinanceAPICall", "BinanceAPICall\BinanceAPICall.csproj", "{1BA3F765-B3E0-4CEC-9C1D-4A6EE8C73FBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9270D4B-AD84-41E4-961B-16BECF987E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9270D4B-AD84-41E4-961B-16BECF987E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9270D4B-AD84-41E4-961B-16BECF987E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9270D4B-AD84-41E4-961B-16BECF987E6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B7B04F-327D-4388-A8F8-6B4E13B802CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B7B04F-327D-4388-A8F8-6B4E13B802CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B7B04F-327D-4388-A8F8-6B4E13B802CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B7B04F-327D-4388-A8F8-6B4E13B802CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A6BE0A6-A9AF-4E0D-AFC3-BC253E2FA88B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A6BE0A6-A9AF-4E0D-AFC3-BC253E2FA88B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A6BE0A6-A9AF-4E0D-AFC3-BC253E2FA88B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A6BE0A6-A9AF-4E0D-AFC3-BC253E2FA88B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C18DA8D5-7091-46E5-AC33-DBE1A9393A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C18DA8D5-7091-46E5-AC33-DBE1A9393A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C18DA8D5-7091-46E5-AC33-DBE1A9393A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C18DA8D5-7091-46E5-AC33-DBE1A9393A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{682A436A-B1C8-4499-A276-8B75A0FCCE43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682A436A-B1C8-4499-A276-8B75A0FCCE43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682A436A-B1C8-4499-A276-8B75A0FCCE43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682A436A-B1C8-4499-A276-8B75A0FCCE43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FD458F8-B67B-4F76-B94A-6F4448279532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FD458F8-B67B-4F76-B94A-6F4448279532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FD458F8-B67B-4F76-B94A-6F4448279532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FD458F8-B67B-4F76-B94A-6F4448279532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BA3F765-B3E0-4CEC-9C1D-4A6EE8C73FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA3F765-B3E0-4CEC-9C1D-4A6EE8C73FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA3F765-B3E0-4CEC-9C1D-4A6EE8C73FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA3F765-B3E0-4CEC-9C1D-4A6EE8C73FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B835BE99-B677-45CB-9383-B25C1C2C03C9}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN2019 - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal
